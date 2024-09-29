@@ -1,0 +1,121 @@
+/* Font used: Roboto */
+/* dark background color for hero and footer: #1F2937 */
+/* Hero Main Text Styling:
+48px, #F9FAF8 weight: 900 */
+/* Hero Secondary Text, Header link text
+18px, #E5E7EB */
+/* Hero Logo Text
+24px, #F9FAF8 */
+
+
+/* Full Page */
+
+* {
+    font-family: "Roboto", Arial;
+}
+
+body {
+    background-color: #1F2937;
+}
+
+/* First Section, Navigation bar */
+.flex-container {
+    display: flex;
+    /* background-color: #3882F6; */
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 1; 
+    color: #E5E7EB;
+}
+
+
+.flex-container .link {
+    /* background-color: #1F2937; */
+    /* border: 1px solid white; */
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    gap: 10px;
+}
+
+.header {
+    font-size: 24px;
+}
+
+.hero {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.FirstSection {
+    background-color: #1F2937;
+}
+
+
+/* Second Section */
+
+.SecondSection {
+    background-color: #F9FAF8;
+}
+
+.informationHeader {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    text-align: center;
+}
+
+.photoBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.photoBox div {
+        border: 2px solid blue;
+        border-radius: 10px;
+        width: 100px;
+        height: 100px;
+              
+}
+
+/* Button Color: call to action background color */
+button {
+    background-color: #3882F6;
+    font-family: "Roboto", Arial;
+    font-size: 18px;
+    color: #f9faf8;
+    border-radius: 5px;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Information header text 
+
+36px, #1F2937 weight: 900*/
+
+/* Quote Section - Third */
+
+.ThirdSection {
+    background-color: #E5E7EB;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.FourthSection {
+    background-color: #fff;
+}
+
+
+
+footer {
+    background-color: #1F2937;
+}
