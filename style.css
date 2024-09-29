@@ -18,45 +18,48 @@ body {
     background-color: #1F2937;
 }
 
-/* First Section, Navigation bar */
+/* First Section, Navigation bar and Hero */
 .flex-container {
     display: flex;
-    /* background-color: #3882F6; */
-    flex-direction: row;
-    justify-content: flex-end;
-    flex: 1; 
     color: #E5E7EB;
 }
 
 
-.flex-container .link {
-    /* background-color: #1F2937; */
-    /* border: 1px solid white; */
-    justify-content: flex-end;
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    gap: 10px;
+#heroFlex {
+    flex-direction: column;
+    max-width: 50%;
+    padding: 100px;
 }
 
+blockquote {
+    flex-grow: 4;
+}
+
+/* Logo Text in top left */
 .header {
     font-size: 24px;
 }
 
+/* Navbar links in top right corner */
+.flex-container .link {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    gap: 1em;
+}
+
+/* This website is awesome text */
 .hero {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
 }
 
-.FirstSection {
-    background-color: #1F2937;
-}
 
 
 /* Second Section */
 
-.SecondSection {
+.Second{
     background-color: #F9FAF8;
 }
 
@@ -72,12 +75,21 @@ body {
     flex-direction: row;
     justify-content: center;
 }
-.photoBox div {
-        border: 2px solid blue;
-        border-radius: 10px;
-        width: 100px;
-        height: 100px;
-              
+
+.photoBox p {
+    width: 50%;
+}
+
+.box {
+    border: 4px ridge #3030e6;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;  
+    align-content: space-around;       
+}
+.boxCaption {
+    text-align: center;
+    font-size: 12px;
 }
 
 /* Button Color: call to action background color */
@@ -94,10 +106,6 @@ button {
     padding-bottom: 5px;
 }
 
-/* Information header text 
-
-36px, #1F2937 weight: 900*/
-
 /* Quote Section - Third */
 
 .ThirdSection {
@@ -108,14 +116,27 @@ button {
     font-size: 36px;
     font-style: italic;
     font-weight: 300;
+    display: flex;
+}
+
+.quote, .author {
+    color: #3030e6;
+}
+
+.author {
+    align-self: flex-end;
 }
 
 .FourthSection {
     background-color: #fff;
+    display: flex;
+
 }
 
 
 
 footer {
     background-color: #1F2937;
+    text-align: center;
+    color: #ffffff;
 }
