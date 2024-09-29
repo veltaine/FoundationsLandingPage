@@ -59,7 +59,11 @@ blockquote {
 }
 
 .flex-container .heroSubtext, .heroButton {
-    display: flex;
+    margin: 20px;
+}
+
+.heroSubtext {
+    max-width: 40%;
 }
 
 .flex-container .heroImage {
@@ -95,20 +99,19 @@ blockquote {
 
 .box {
     border: 4px ridge #3030e6;
+    margin-left:auto;
+    margin-right:auto;
     border-radius: 10px;
     width: 100px;
-    height: 100px;  
-    align-content: space-around;       
+    height: 100px;        
 }
 .boxCaption {
     text-align: center;
-    font-size: 12px;
 }
 
 /* Button Color: call to action background color */
 button {
     background-color: #3882F6;
-    font-family: "Roboto", Arial;
     font-size: 18px;
     color: #f9faf8;
     border-radius: 5px;
@@ -125,15 +128,16 @@ button {
     background-color: #E5E7EB;
 }
 
-.quote {
+.quoteBox {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 36px;
     font-style: italic;
     font-weight: 300;
-    display: flex;
-}
-
-.quote, .author {
-    color: #3030e6;
+    width: 60%;
+    flex-direction: column;
 }
 
 .author {
