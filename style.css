@@ -22,6 +22,7 @@ body {
 .flex-container {
     display: flex;
     color: #E5E7EB;
+    flex-wrap: wrap;
 }
 
 
@@ -49,10 +50,22 @@ blockquote {
 }
 
 /* This website is awesome text */
-.hero {
+.flex-container .hero {
+    display: flex;
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
+    flex-grow: 4;
+}
+
+.flex-container .heroSubtext, .heroButton {
+    display: flex;
+}
+
+.flex-container .heroImage {
+    display: flex;
+    padding: 20px;
+
 }
 
 
