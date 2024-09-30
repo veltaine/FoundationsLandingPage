@@ -144,13 +144,37 @@ button {
     align-self: flex-end;
 }
 
+
+/* Fourth Section - Call To Action */
 .FourthSection {
     background-color: #fff;
     display: flex;
+    padding: 30px;
 
 }
 
+.CallToAction {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background: #3882F6;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
+.actionHeader {
+    font-size: 36px;
+}
+
+.rightAction {
+    border: 2px solid white;
+    border-radius: 5px;
+    align-items: center;
+    margin: 3em;
+    text-align: center;
+}
 
 footer {
     background-color: #1F2937;
