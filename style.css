@@ -1,15 +1,4 @@
-/* Font used: Roboto */
-/* dark background color for hero and footer: #1F2937 */
-/* Hero Main Text Styling:
-48px, #F9FAF8 weight: 900 */
-/* Hero Secondary Text, Header link text
-18px, #E5E7EB */
-/* Hero Logo Text
-24px, #F9FAF8 */
-
-
 /* Full Page */
-
 * {
     font-family: "Roboto", Arial;
 }
@@ -22,19 +11,10 @@ body {
 .flex-container {
     display: flex;
     color: #E5E7EB;
+    /* this wrap keeps things in perspective */
     flex-wrap: wrap;
 }
 
-
-#heroFlex {
-    flex-direction: column;
-    max-width: 50%;
-    padding: 100px;
-}
-
-blockquote {
-    flex-grow: 4;
-}
 
 /* Logo Text in top left */
 .header {
@@ -49,7 +29,7 @@ blockquote {
     gap: 1em;
 }
 
-/* This website is awesome text */
+/* Hero Text Header "this website is awesome" */
 .flex-container .hero {
     display: flex;
     font-size: 48px;
@@ -90,11 +70,10 @@ blockquote {
 .photoBox {
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 .photoBox p {
-    width: 50%;
+    margin: 2em;
 }
 
 .box {
@@ -161,6 +140,7 @@ button {
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
+    color: #F9FAF8;
     
 }
 
@@ -180,4 +160,5 @@ footer {
     background-color: #1F2937;
     text-align: center;
     color: #ffffff;
+    padding: 2em;
 }
