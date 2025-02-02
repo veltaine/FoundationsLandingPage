@@ -7,18 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="flex-container">
+
+
+<!-- Navigation Section -->
+<section class="navigation">
+<div class="flex-container" id="navigation-bar">
         <div class="header">Header Logo</div> 
-        <div class="flex-container" id="top-navigation">
-            <div>header link one</div>
-            <div>header link two</div>
-            <div>header link three</div>
+        <div id="top-navigation">
+            <div> header link one </div>
+            <div> header link two </div>
+            <div> header link three </div>
         </div>
       </div>
+</section>
 
 <!-- First Section - Hero and Navbar -->
 
-
+<!-- TODO: Fix navigation links to anchor to right side of flexbox -->
+<!-- TODO: Line up image and hero text to sit side by side, currently off center -->
 <section class="FirstSection">
         <div class="flex-container">
             <div class="column-class">
@@ -33,21 +39,22 @@
 <!-- Second Section - Boxes -->
 
 
+<!-- TODO: Fix text under boxes to prevent overflow from under box width -->
 <section class ="Second">
     <div class="SecondSection">
         <!-- Center and bold this header -->
         <p class="informationHeader">Some Random Information.</p>
-        <div class="photoBox">
+        <div class="flex-container" id="box-container">
         <!-- place box with rounded edges above this text blurb-->
-         <div class="boxCaption">
-            <div class="box">One</div>
-        <p>this is some subtext under an illustration or image</p>
-        </div>
+            <div class="boxCaption">
+                <div class="box">One</div>
+                    <p>this is some subtext under an illustration or image</p>
+            </div>
         <!-- place box with rounded edges above this text blurb-->
-        <div class="boxCaption">
-            <div class="box">Two</div>
-        <p>this is some subtext under an illustration or image</p>
-        </div>
+            <div class="boxCaption">
+                <div class="box">Two</div>
+                    <p>this is some subtext under an illustration or image</p>
+            </div>
         <!-- place box with rounded edges above this text blurb-->
         <div class="boxCaption">
             <div class="box">Three</div>
@@ -75,13 +82,14 @@
         } -->
         <div class="quoteBox">
             <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-            <p class="author">-Thor, God of Thunder</p>
+            <p>-Thor, God of Thunder</p>
         </div>
     </div>
 
 <!-- Fourth Section - Call To Action -->
 
-
+<!-- TODO: Shrink space between header and subheader -->
+<!-- TODO: Fix button size and align better --> 
 <section class="FourthSection">
         <div class="CallToAction">
             <div class="flex-container">
