@@ -5,14 +5,23 @@
 
 body {
     background-color: #1F2937;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* First Section, Navigation bar and Hero */
 .flex-container {
     display: flex;
-    color: #E5E7EB;
-    /* this wrap keeps things in perspective */
-    flex-wrap: wrap;
+    
+}
+
+.flex-container div {
+    flex: 1 1 auto;
+}
+
+.column-class {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -22,11 +31,13 @@ body {
 }
 
 /* Navbar links in top right corner */
-.flex-container .link {
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    gap: 1em;
+div > #top-navigation.flex-container {
+    color:#F9FAF8;
+
+}
+
+.header {
+    color:#F9FAF8;
 }
 
 /* Hero Text Header "this website is awesome" */
@@ -35,22 +46,18 @@ body {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
-    flex-grow: 4;
+
 }
 
 .flex-container .heroSubtext, .heroButton {
-    margin: 20px;
+    
+    color: #F9FAF8;
 }
 
-.heroSubtext {
-    max-width: 40%;
-}
 
-.flex-container .heroImage {
+/* .heroImage {
     display: flex;
-    padding: 20px;
-
-}
+} */
 
 
 
@@ -70,11 +77,12 @@ body {
 .photoBox {
     display: flex;
     flex-direction: row;
+    flex: 1 1 auto;
 }
 
-.photoBox p {
+/* .photoBox p {
     margin: 2em;
-}
+} */
 
 .box {
     border: 4px ridge #3030e6;
@@ -82,7 +90,7 @@ body {
     margin-right:auto;
     border-radius: 10px;
     width: 100px;
-    height: 100px;        
+    height: 100px;      
 }
 .boxCaption {
     text-align: center;
@@ -91,14 +99,18 @@ body {
 /* Button Color: call to action background color */
 button {
     background-color: #3882F6;
-    font-size: 18px;
     color: #f9faf8;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    min-width: 50px;
+    max-width: 125px;
+    padding: 5px 35px;
+    height: auto;
+    width: auto;
+}
+
+.signUpButton, button {
+    font-weight: 700;
 }
 
 /* Quote Section - Third */
@@ -127,14 +139,11 @@ button {
 /* Fourth Section - Call To Action */
 .FourthSection {
     background-color: #fff;
-    display: flex;
     padding: 30px;
 
 }
 
 .CallToAction {
-    display: flex;
-    justify-content: space-around;
     padding: 40px;
     background: #3882F6;
     border-radius: 10px;
@@ -144,16 +153,20 @@ button {
     
 }
 
-.actionHeader {
-    font-size: 36px;
+.leftAction {
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
 }
 
 .rightAction {
-    border: 2px solid white;
-    border-radius: 5px;
-    align-items: center;
-    margin: 3em;
-    text-align: center;
+    border: 2px solid #F9FAF8;
+    display: flex;
+    align-self: center;
+}
+
+.actionHeader {
+    font-size: 36px;
 }
 
 footer {

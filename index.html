@@ -9,7 +9,7 @@
 <body>
     <div class="flex-container">
         <div class="header">Header Logo</div> 
-        <div class="link">
+        <div class="flex-container" id="top-navigation">
             <div>header link one</div>
             <div>header link two</div>
             <div>header link three</div>
@@ -19,21 +19,21 @@
 <!-- First Section - Hero and Navbar -->
 
 
-    <div class="FirstSection">
+<section class="FirstSection">
         <div class="flex-container">
-            <div>
+            <div class="column-class">
             <p class="hero">This website is awesome</p>
             <p class="heroSubtext">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
-            <button class="heroButton">Sign up</button>
+            <button class ="signUpButton">Sign up</button>
             </div>
-            <img class="heroImage" src="./images/placeholder.jpeg">
+            <div><img class="heroImage" src="./images/placeholder.jpeg"></div>
         </div>
-    </div>
+    </section>
 
 <!-- Second Section - Boxes -->
 
 
-    <section class ="Second">
+<section class ="Second">
     <div class="SecondSection">
         <!-- Center and bold this header -->
         <p class="informationHeader">Some Random Information.</p>
@@ -82,21 +82,23 @@
 <!-- Fourth Section - Call To Action -->
 
 
-    <div class="FourthSection">
+<section class="FourthSection">
         <div class="CallToAction">
-            <div class="leftAction">
-            <p class="actionHeader">Call To action! It's Time!</p>
-            <p>Sign up for the product by clicking that button right over there!</p>
-            </div>
-            <div class = "rightAction">
-                <button> Sign Up</button>
+            <div class="flex-container">
+                <div class="leftAction">
+                    <p class="actionHeader">Call To action! It's Time!</p>
+                    <p>Sign up for the product by clicking that button right over there!</p>
+                </div>
+                <div class="rightAction">
+                <button>Sign Up</button>
+                </div>
             </div>
         </div>
         
-    </div>
+</section>
     <footer class="EndSection">
         <!-- Centered text in middle -->
-        <p> Copyright Frank S Pelletier (Part of the Odin Project Foundation Curriculum) 2024</p>
+        <p> Copyright Frank S Pelletier (Part of the Odin Project Foundation Curriculum) 2025</p>
     </footer>
 
 </body>
